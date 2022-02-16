@@ -4,7 +4,6 @@
 * [Setup](#setup)
 * [Design decisions](#design-decisions)
 * [Features](#features)
-* [Architecture](#architecture)
 
 ## General info
 This project is a simple post/comment in React, fetching data from an API
@@ -35,70 +34,3 @@ $ npm run dev
 * Clicking a post will open a modal with all the comments that post has
 * Possibility to send your own comment to a post (will be stored on the context state)
 * Responsive design
-
-## Architecture:
-src
-    │   App.css
-    │   App.tsx
-    │   index.css
-    │   index.tsx
-    │   vite-env.d.ts
-    │
-    ├───config
-    │       .env
-    │
-    ├───domain
-    │       Comment.ts
-    │       Post.ts
-    │
-    ├───modules
-    │   └───posts
-    │       ├───components
-    │       │       index.ts
-    │       │       PostCommentsForm.tsx
-    │       │       PostCommentsList.tsx
-    │       │       PostList.tsx
-    │       │
-    │       ├───context
-    │       │       PostsContext.ts
-    │       │
-    │       ├───pages
-    │       │       index.ts
-    │       │       Posts.tsx
-    │       │
-    │       └───service
-    │               CommentService.ts
-    │               index.ts
-    │               PostService.ts
-    │
-    ├───routes
-    │       index.ts
-    │       PageRoutes.tsx
-    │
-    └───shared
-        ├───api
-        │       Api.ts
-        │       IApi.ts
-        │
-        ├───components
-        │   │   AppBar.css
-        │   │   AppBar.tsx
-        │   │   AppPage.tsx
-        │   │   CustomCard.tsx
-        │   │   CustomModal.tsx
-        │   │   index.ts
-        │   │   PageTitle.tsx
-        │   │
-        │   └───layout
-        │           index.ts
-        │           Page.css
-        │           Page.tsx
-        │           PageContent.tsx
-        │           TopBar.tsx
-        │
-        ├───hooks
-        │       index.ts
-        │       useToggle.tsx
-        │
-        └───providers
-                index.tsx
