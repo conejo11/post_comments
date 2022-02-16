@@ -1,0 +1,20 @@
+.Main-grid {
+  display: 'grid';
+  grid-template-columns: 'auto minmax(0, 1fr)';
+  grid-template-rows: 'auto 1fr';
+  grid-template-areas: '"top-bar top-bar" "side-bar page-content"';
+  min-height: '100vh';
+}
+
+.Top-bar {
+  grid-area: 'top-bar';
+}
+
+.Side-bar {
+  grid-area: 'side-bar';
+}
+
+.Page-content {
+  grid-area: 'page-content';
+  display: 'block';
+}
