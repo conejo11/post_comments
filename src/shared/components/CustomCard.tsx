@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Card } from 'react-bootstrap'
+import './CustomCard.css'
 
 export interface CustomCardProps {
   title: string
@@ -11,7 +12,10 @@ export interface CustomCardProps {
 const CustomCard: FC<CustomCardProps> = (props) => {
   const { title, subtitle, body, onClick } = props
   return (
-    <Card onClick={onClick}>
+    <Card
+      className={onClick && 'Custom-card'}
+      onClick={onClick}
+    >
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
