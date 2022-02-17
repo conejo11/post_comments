@@ -30,7 +30,7 @@ $ npm install vite
 ```
 
 ## Design decisions
-* Organizing posts e comments lists in a list of cards to better organize the comments on screen
+* Organizing posts and comments lists in a list of cards to better organize the comments on screen
 * Clicking a post will open a Modal with the list of comments and a form to post your own comment
 * Most of the styling is done via bootstrap, but some instances were done via custom CSS
 
