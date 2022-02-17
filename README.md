@@ -37,5 +37,5 @@ $ npm install vite
 ## Features
 * Fetching posts and comments from an API
 * Clicking a post will open a modal with all the comments that post has
-* Possibility to send your own comment to a post (will be stored on the context state)
+* Possibility to send your own comment to a post (will be stored in the context state)
 * Responsive design
