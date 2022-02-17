@@ -24,6 +24,11 @@ $ npm install
 $ npm run dev
 ```
 
+You may need to install Vite to properly run the project (in case you haven't installed it already)
+```
+$ npm install vite
+```
+
 ## Design decisions
 * Organizing posts e comments lists in a list of cards to better organize the comments on screen
 * Clicking a post will open a Modal with the list of comments and a form to post your own comment
